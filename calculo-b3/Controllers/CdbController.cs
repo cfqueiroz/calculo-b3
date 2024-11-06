@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using calculo_b3.Models;
 using calculo_b3.Services;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace calculo_b3.Controllers
