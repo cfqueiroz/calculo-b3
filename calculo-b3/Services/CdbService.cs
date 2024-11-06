@@ -8,7 +8,7 @@ using calculo_b3.Models;
 
 namespace calculo_b3.Services
 {
-    public class CdbService
+    public class CdbService : ICdbService
     {
         private const double CDI = 0.009;
         private const double TB = 1.08;  

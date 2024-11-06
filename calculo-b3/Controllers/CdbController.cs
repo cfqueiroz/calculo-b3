@@ -24,8 +24,8 @@ namespace calculo_b3.Controllers
         [Route("api/calculo/cdb")]
         public IHttpActionResult Calcula([FromBody] CdbRequest cdbRequest)
         {
-            var cdbService = new CdbService();
-            CdbResponse cdbResponse = cdbService.CalculaCDB(cdbRequest);
+            CdbResponse cdbResponse = _cdbService.CalculaCDB(cdbRequest);
+
 
             if (cdbResponse.Erro)
             {
