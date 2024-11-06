@@ -27,7 +27,7 @@ namespace calculo_b3.Services
             if (cdbRequest.Meses <= 1)
             {
                 cdbResponse.Erro = true;
-                cdbResponse.MsgErro = "Prazo deve maior que 1.";
+                cdbResponse.MsgErro = "Prazo deve ser maior que 1.";
                 return cdbResponse;
             }
 

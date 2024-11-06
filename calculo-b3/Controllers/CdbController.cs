@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using calculo_b3.Models;
 using calculo_b3.Services;
-using Microsoft.AspNetCore.Mvc;
+
 
 
 namespace calculo_b3.Controllers
@@ -9,9 +9,16 @@ namespace calculo_b3.Controllers
     
    
 
-    public class CdbCalculatorController : ApiController
+    public class CdbController : ApiController
     {
-       
+        private readonly ICdbService _cdbService;
+
+        
+        public CdbController(ICdbService cdbService)
+        {
+            _cdbService = cdbService;
+        }
+
 
         [HttpPost]
         [Route("api/calculo/cdb")]
